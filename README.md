@@ -36,7 +36,7 @@ npm i oassign
 const oassign = require('oassign');
 console.log(oassign({a: 1}, [2], 'bad', null));
 // {a: 1, 0: 2}
-console.log('bad'));
+console.log(oassign('bad'));
 // {}
 ```
 
