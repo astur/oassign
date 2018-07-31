@@ -5,19 +5,22 @@ Yes, it is just another Object.assign.
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 
-## Why?
+## FAQ
 
-Mostly because `Object.assign` changes first of merged objects. So it is boring to write everytime something like that:
+### Why not `Object.assign` by itself?
+
+Mostly because `Object.assign` changes first of merged objects. 
 
 ```js
+// So it is boring to write everytime something like that:
 const newObj = Object.assign({}, firstObj, secondObj);
-```
-
-...instead of something like that:
-
-```js
+// instead of something like that:
 const newObj = oassign(ofirstObj, secondObj);
 ```
+
+### Why not destructuring assignment?
+
+Mostly because destructuring assignment treats strings as arrays of chars. Also because for some people destructuring assignment is not readable enough (for example sometime they can forget ellipsis). But destructuring assignment is not bad too if you prefer it.
 
 ## Features
 
